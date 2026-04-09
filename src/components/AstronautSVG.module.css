@@ -1,0 +1,69 @@
+.wrapper {
+  width: 320px;
+  height: 320px;
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33%       { transform: translateY(-18px) rotate(1.5deg); }
+  66%       { transform: translateY(-8px) rotate(-1deg); }
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--card-border);
+  animation: spin linear infinite;
+}
+
+.ring1 {
+  width: 400px; height: 400px;
+  top: -40px; left: -40px;
+  animation-duration: 20s;
+}
+
+.ring2 {
+  width: 500px; height: 500px;
+  top: -90px; left: -90px;
+  animation-duration: 35s;
+  animation-direction: reverse;
+  border-style: dashed;
+  opacity: 0.4;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.dot1 {
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.dot2 {
+  background: var(--accent2);
+  box-shadow: 0 0 10px var(--accent2);
+  top: auto;
+  bottom: 0;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .wrapper { width: 220px; height: 220px; }
+  .ring1 { width: 280px; height: 280px; top: -30px; left: -30px; }
+  .ring2 { width: 360px; height: 360px; top: -70px; left: -70px; }
+}

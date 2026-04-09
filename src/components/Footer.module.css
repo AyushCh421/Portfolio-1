@@ -1,0 +1,16 @@
+.footer {
+  background: var(--space-bg);
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid var(--card-border);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  position: relative;
+  z-index: 1;
+}
+
+.sub {
+  margin-top: 0.4rem;
+  opacity: 0.6;
+}

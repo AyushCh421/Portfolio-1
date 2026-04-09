@@ -1,0 +1,123 @@
+/* ─── THEME VARIABLES ─────────────────────── */
+:root {
+  --space-bg: #030712;
+  --space-bg2: #0a0f1e;
+  --nebula1: #1a0a2e;
+  --nebula2: #0d1b3e;
+  --star: #e8f4ff;
+  --accent: #7c3aed;
+  --accent2: #06b6d4;
+  --accent3: #f59e0b;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --card: rgba(15, 23, 42, 0.8);
+  --card-border: rgba(124, 58, 237, 0.25);
+  --glow: rgba(124, 58, 237, 0.4);
+  --glow2: rgba(6, 182, 212, 0.3);
+  --nav-bg: rgba(3, 7, 18, 0.85);
+}
+
+[data-theme='aurora'] {
+  --space-bg: #001a12;
+  --space-bg2: #002d1f;
+  --nebula1: #001a12;
+  --nebula2: #003d2a;
+  --accent: #10b981;
+  --accent2: #06b6d4;
+  --accent3: #a78bfa;
+  --card: rgba(0, 26, 18, 0.85);
+  --card-border: rgba(16, 185, 129, 0.25);
+  --glow: rgba(16, 185, 129, 0.4);
+  --glow2: rgba(167, 139, 250, 0.3);
+  --nav-bg: rgba(0, 12, 8, 0.9);
+}
+
+[data-theme='solar'] {
+  --space-bg: #0f0500;
+  --space-bg2: #1a0a00;
+  --nebula1: #1f0800;
+  --nebula2: #2d1200;
+  --accent: #f97316;
+  --accent2: #fbbf24;
+  --accent3: #ef4444;
+  --card: rgba(20, 8, 0, 0.85);
+  --card-border: rgba(249, 115, 22, 0.25);
+  --glow: rgba(249, 115, 22, 0.5);
+  --glow2: rgba(251, 191, 36, 0.3);
+  --nav-bg: rgba(10, 4, 0, 0.9);
+}
+
+[data-theme='light'] {
+  --space-bg: #f0f4ff;
+  --space-bg2: #e8eeff;
+  --nebula1: #dde5ff;
+  --nebula2: #e8f4ff;
+  --star: #1e1b4b;
+  --accent: #6d28d9;
+  --accent2: #0891b2;
+  --accent3: #d97706;
+  --text: #1e1b4b;
+  --text-muted: #4c4f69;
+  --card: rgba(255, 255, 255, 0.9);
+  --card-border: rgba(109, 40, 217, 0.2);
+  --glow: rgba(109, 40, 217, 0.15);
+  --glow2: rgba(8, 145, 178, 0.15);
+  --nav-bg: rgba(240, 244, 255, 0.9);
+}
+
+/* ─── RESET ───────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Syne', sans-serif;
+  background: var(--space-bg);
+  color: var(--text);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* ─── SCROLLBAR ───────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--space-bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+
+/* ─── REVEAL ANIMATION ────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── SHARED SECTION STYLES ───────────────── */
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-sub {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 3.5rem;
+  font-family: 'JetBrains Mono', monospace;
+}

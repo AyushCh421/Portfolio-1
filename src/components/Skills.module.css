@@ -1,0 +1,41 @@
+.section {
+  position: relative;
+  z-index: 1;
+  padding: 5rem 8%;
+  background: var(--space-bg2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.3rem 1rem;
+  text-align: center;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 30px var(--glow);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.name {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+}

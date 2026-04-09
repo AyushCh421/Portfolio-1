@@ -1,0 +1,141 @@
+.section {
+  position: relative;
+  z-index: 1;
+  padding: 5rem 8%;
+  background: linear-gradient(180deg, var(--nebula2) 0%, var(--space-bg) 100%);
+}
+
+.filters {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.filterTab {
+  background: none;
+  border: 1px solid var(--card-border);
+  padding: 0.45rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  transition: all 0.2s;
+}
+.filterTab.active,
+.filterTab:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.35s;
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px var(--glow);
+  border-color: var(--accent);
+}
+.card:hover .thumb::after { opacity: 1; }
+
+.thumb {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--nebula1), var(--nebula2));
+  position: relative;
+  overflow: hidden;
+}
+.thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--glow), var(--glow2));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.thumbText {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.15);
+  letter-spacing: -0.02em;
+  z-index: 1;
+}
+
+.catLabel {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 1;
+  background: var(--accent);
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  letter-spacing: 0.08em;
+}
+
+.body { padding: 1.5rem; }
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.name { font-weight: 700; font-size: 0.98rem; }
+.year {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--accent2);
+}
+
+.stack {
+  margin-bottom: 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.stackTag { /* inline — no block styles needed */ }
+
+.desc {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--accent2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.link:hover { color: var(--accent); }
