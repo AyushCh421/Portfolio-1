@@ -19,7 +19,7 @@ export default function About() {
             I am a detail-oriented and adaptable problem-solver, currently in my Second year of
             Computer Science and Engineering at{' '}
             <a href={personalInfo.nitSikkimUrl} target="_blank" rel="noreferrer">
-              National Institute of Technology, Sikkim
+              National Institute of Technology,Sikkim
             </a>
             . My coursework in Data Structures, Algorithms, Software Engineering, and Machine
             Learning has provided me with a strong theoretical foundation.
