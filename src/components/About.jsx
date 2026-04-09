@@ -16,7 +16,7 @@ export default function About() {
       <div className={styles.grid}>
         <div className={`${styles.text} reveal`} ref={r3}>
           <p>
-            I am a detail-oriented and adaptable problem-solver, currently in my first year of
+            I am a detail-oriented and adaptable problem-solver, currently in my Second year of
             Computer Science and Engineering at{' '}
             <a href={personalInfo.nitSikkimUrl} target="_blank" rel="noreferrer">
               National Institute of Technology, Sikkim
