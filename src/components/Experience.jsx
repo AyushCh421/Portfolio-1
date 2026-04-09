@@ -32,7 +32,9 @@ export default function Experience() {
   return (
     <section id="experience" className={styles.section}>
       <h2 className={`section-title reveal`} ref={r1}>Experience</h2>
-      <p className={`section-sub reveal`} ref={r2}>// roles &amp; responsibilities</p>
+      <p className={`section-sub reveal`} ref={r2}>
+          Roles & Responsibilities
+      </p>
       <div className={styles.list}>
         {experiences.map((exp) => (
           <ExpCard key={exp.org} exp={exp} />

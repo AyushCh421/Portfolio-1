@@ -19,7 +19,9 @@ export default function Skills() {
   return (
     <section id="skills" className={styles.section}>
       <h2 className={`section-title reveal`} ref={r1}>Tech Stack</h2>
-      <p className={`section-sub reveal`} ref={r2}>// technologies and tools I work with</p>
+      <p className={`section-sub reveal`} ref={r2}>
+          Technologies and tools I work with
+      </p>
       <div className={styles.grid}>
         {skills.map((s) => (
           <SkillCard key={s.name} skill={s} />
