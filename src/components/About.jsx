@@ -9,7 +9,9 @@ export default function About() {
   return (
     <section id="about" className={styles.about}>
       <h2 className={`section-title reveal`} ref={r1}>About Me</h2>
-      <p className={`section-sub reveal`} ref={r2}>// a bit about who I am</p>
+      <p className={`section-sub reveal`} ref={r2}>
+          A bit about who I am
+      </p>
 
       <div className={styles.grid}>
         <div className={`${styles.text} reveal`} ref={r3}>

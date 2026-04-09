@@ -22,7 +22,9 @@ export default function Achievements() {
   return (
     <section id="achievements" className={styles.section}>
       <h2 className={`section-title reveal`} ref={r1}>Achievements</h2>
-      <p className={`section-sub reveal`} ref={r2}>// certifications and accomplishments</p>
+     <p className={`section-sub reveal`} ref={r2}>
+          Certifications and accomplishments
+</p>
 
       <div className={styles.grid}>
         {achievements.map((a) => (
