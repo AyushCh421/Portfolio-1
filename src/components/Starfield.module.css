@@ -7,3 +7,7 @@
   z-index: 0;
   pointer-events: none;
 }
+canvas {
+  width: 100% !important;
+  overflow: hidden;
+}
