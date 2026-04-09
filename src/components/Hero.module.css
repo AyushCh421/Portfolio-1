@@ -182,26 +182,77 @@
 }
 
 @media (max-width: 900px) {
-  .grid { grid-template-columns: 1fr; gap: 2rem; }
-  .visual { order: -1; }
-}
-@media (max-width: 768px) {
   .hero {
-    text-align: center;
-    padding: 20px;
+    padding: 7rem 5% 4rem;
   }
 
-  .container {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+  }
+
+  .name {
+    align-items: center;
+    text-align: center;
+  }
+
+  .meta {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .desc {
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btns {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .socials {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .visual {
+    width: 100%;
+    display: flex;
     justify-content: center;
   }
 
-  .title,
-  .section-title,
-  .section-sub,
-  .desc {
-    text-align: center;
+  .visualCard {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .statsRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .code {
+    font-size: 0.68rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .codeBlock {
+    display: none;
+  }
+  .statsRow {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

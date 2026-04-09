@@ -17,7 +17,7 @@ export default function Hero() {
       <div className={styles.grid}>
 
         {/* ── Left column ── */}
-        <div className={styles.content}>
+        <div className={styles.content} style={{width: '100%'}}>
           <div className={`${styles.badge} reveal`} ref={r1}>
             <span>▶</span> CS Engineer &amp; ML Developer
           </div>
